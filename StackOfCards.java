@@ -14,6 +14,11 @@ public class StackOfCards extends ArrayList<Card>
             add(new Card(i, Card.DEFAULT_FACE));
     }
     
+    /**
+     *
+     * @return Formatted string for the card stack
+     */
+    @Override
     public String toString()
     {
         String stackString = "";
