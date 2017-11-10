@@ -1,5 +1,3 @@
-package solitaire;
-
 import java.util.Collections;
 
 /**

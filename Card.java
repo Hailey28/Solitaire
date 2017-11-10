@@ -1,5 +1,3 @@
-package solitaire;
-
 /**
  *
  * @author Jonathan and Whitney

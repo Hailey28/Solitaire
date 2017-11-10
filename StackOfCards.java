@@ -1,11 +1,10 @@
-package solitaire;
-
-import java.util.ArrayList;
-
 /**
  *
  * @author Jonathan and Whitney
  */
+
+import java.util.ArrayList;
+
 public class StackOfCards extends ArrayList<Card>
 {
     public StackOfCards(int stackSize)
