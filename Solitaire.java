@@ -1,4 +1,4 @@
-/**
+/*
  * @author Jonathan and Whitney
  */
 
@@ -39,5 +39,7 @@ public class Solitaire
         deck.shuffle();
 
         createPiles();
+
+        //TODO: Add GUI here
     }
 }
