@@ -15,6 +15,9 @@ public class Solitaire
     private static StackOfCards drawPile;
     private static ArrayList<StackOfCards> boardPiles, finishedPiles;
 
+    //GUI variables
+    private static SolitaireGUI gui;
+
     private static void createPiles()
     {
         drawPile      = new StackOfCards(EMPTY_STACK);
@@ -29,7 +32,12 @@ public class Solitaire
         for(int i = 0; i < NUM_FINISHED_PILES; ++i)
             finishedPiles.add(new StackOfCards(NUM_FINISHED_PILES));
     }
-    
+
+    private static void createAndShowGUI()
+    {
+        gui = new SolitaireGUI();
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -39,7 +47,6 @@ public class Solitaire
         deck.shuffle();
 
         createPiles();
-
-        //TODO: Add GUI here
+        createAndShowGUI();
     }
 }

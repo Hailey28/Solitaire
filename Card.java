@@ -1,24 +1,10 @@
-/**
- *
+/*
  * @author Jonathan and Whitney
  */
+
 public class Card
 {
-    //Static final variables
-    public static final int  DEFAULT_ID   = 0;
-    public static final int  NUM_VALUES   = 13;
-    public static final int  NUM_SUITS    = 4;
-    public static final Face DEFAULT_FACE = Face.Face_Down;
-    
-    //Card attributes
-    private final int id;
-    private final Value value;
-    private final Color color;
-    private final Suit suit;
-    private Face face;
-    
-    
-    /**********************Enums for card attributes***************************/
+    //Enums for card attributes
     public static enum Color
     {
         Color_Red,
@@ -55,7 +41,19 @@ public class Card
         Suit_Diamonds,
         Suit_Hearts
     }
-    /**************************************************************************/
+        
+    //Static final variables
+    public static final int  DEFAULT_ID   = 0;
+    public static final int  NUM_VALUES   = Value.values().length;
+    public static final int  NUM_SUITS    = Suit.values().length;
+    public static final Face DEFAULT_FACE = Face.Face_Down;
+    
+    //Card attributes
+    private final int id;
+    private final Value value;
+    private final Color color;
+    private final Suit suit;
+    private Face face;
     
     //Default constructor
     public Card() { this(DEFAULT_ID, DEFAULT_FACE); }
